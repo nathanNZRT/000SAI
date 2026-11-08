@@ -4,6 +4,34 @@ Structure AI is an Environment - a structure methodology for AI agents, includes
 
 ![SAI](SAI-IMG.png)
 
+## Crowned Model
+
+The SAI node essentials.
+
+![Crowned Model](CDM-IMG.png)
+
+| # | Code | Name | Type | Node |
+|---|------|------|------|------|
+| 1 | CPL | cPanel | PLA | Web-hosting platform |
+| 2 | RPO | Repositories | — | `RPO-SAI` → GitHub |
+| 3 | OBS | Obsidian | APP | Markdown notes app — the vault `VLT-SAI` |
+| 4 | WOR | WordPress | APP | CMS — public website, centre |
+| 5 | NCL | Nextcloud | APP | File storage and collaboration |
+| 6 | EXT | External / extras | — | FLA (Flarum) and extras |
+| 7 | DOL | Dolibarr | APP | ERP / CRM — tickets, tags |
+
+## Triad
+
+Three roots.
+
+![Triad](TRI-IMG.png)
+
+| Code | Name | Root | Holds |
+|------|------|------|-------|
+| CBR | Chamber | `C:\CBR-SAI` | Concept files (`*-cpt.html`) and credentials |
+| VLT | Vault | `C:\VLT-SAI` | Knowledge — the Obsidian (OBS) vault |
+| RPO | Repositories | `C:\RPO-SAI` | Code — mirrored to GitHub |
+
 ## Inside SAI
 
 An environment — each level lives inside the one above it:
@@ -43,6 +71,8 @@ An environment — each level lives inside the one above it:
 000SAI/
 ├── SAI.md                          Vault root — methodology overview
 ├── SAI-IMG.png                     The SAI environment image
+├── CDM-IMG.png                     Crowned Model image
+├── TRI-IMG.png                     Triad image
 └── SYS/                            System (user device)
     └── PLA/                        Platforms
         ├── CPL/                    cPanel (web hosting)
