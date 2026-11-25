@@ -46,7 +46,7 @@ An environment — each level lives inside the one above it:
 
 - **Organization (ORG)**
   - **Governance (GOV)**
-  - **Operations (OPS)** → Agents (AGT) → Code (COD), Integrations (ITG), Personas (PER), Skills (SKI), TaskFlows (TFL); Business Units (BUS)
+  - **Operations (OPS)** → Agents (AGT) — tasker agents, each with a distinct function → Integrations (ITG), Personas (PER) incl. each agent's Code Portfolio, Skills (SKI); Business Units (BUS)
   - **Wiki (WIK)** → Applications (APP), Knowledge Bases (KBS)
 
 **Files**
@@ -60,10 +60,9 @@ An environment — each level lives inside the one above it:
 ## Conventions
 
 - **Folders:** bare 3-letter uppercase code (e.g. `DOL`)
-- **Node file:** each ref-code node holds one summary file named after its lowercase code (e.g. `dol.md` under `DOL`)
-- **Content prefix pattern:** `{CODE}-{qualifier}` → `WOR-PGT-CAS` = WordPress page for Customer & Sales
-- **Hierarchical doc refs (body only, never as tags):** `WPS-DOL-BUS-ICS` chains codes with `-`; tags stay flat (`WPS`, `BUS`)
-- **Frontmatter:** include the reference code as a tag, e.g. `tags: [dolibarr, DOL, config]`
+- **SMY file:** each level holds one summary (SMY) file named after its lowercase code (e.g. `win.md` under `WIN`)
+- **Code chain:** `apc-aoc-otc` = App Code · App Object Code · Object Type Code → `DOL-TIC-RPT` = Dolibarr · Ticket · Reporting
+- **Frontmatter:** `rfc` · `apc` · `aoc` · `otc` = Reference Code · App Code · App Object Code · Object Type Code
 
 ## Repository layout
 
@@ -87,11 +86,9 @@ An environment — each level lives inside the one above it:
                 │       ├── GOV/            Governance
                 │       ├── OPS/            Operations
                 │       │   ├── AGT/        Agents
-                │       │   │   ├── COD/    Code
                 │       │   │   ├── ITG/    Integrations
-                │       │   │   ├── PER/    Personas
-                │       │   │   ├── SKI/    Skills
-                │       │   │   └── TFL/    TaskFlows
+                │       │   │   ├── PER/    Personas (incl. Code Portfolios)
+                │       │   │   └── SKI/    Skills
                 │       │   └── BUS/        Business Units
                 │       └── WIK/            Wiki
                 │           ├── APP/        Applications
